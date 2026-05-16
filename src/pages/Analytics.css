@@ -1,0 +1,9 @@
+.analytics-page { padding-bottom: 40px; }
+.mb-24 { margin-bottom: 24px; }
+.chart-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 20px; color: var(--text-secondary); }
+.chart-wrapper { height: 300px; }
+.chart-wrapper.flex-center { display: flex; align-items: center; }
+.full-width { grid-column: 1 / -1; }
+.pie-legend { display: flex; flex-direction: column; gap: 10px; margin-left: 20px; }
+.legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-secondary); }
+.legend-color { width: 12px; height: 12px; border-radius: 3px; }

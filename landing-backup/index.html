@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civic Voice — Crowdsourced Civic Issue Reporting Platform</title>
+  <meta name="description" content="Civic Voice is an end-to-end, mobile-first civic engagement platform built for Smart India Hackathon. Empowering citizens to report, track, and resolve civic issues in real-time.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+          <path d="M16 6L8 12v10l8 4 8-4V12l-8-6z" fill="none" stroke="#fff" stroke-width="1.5"/>
+          <path d="M16 10l-4 3v5l4 2 4-2v-5l-4-3z" fill="#fff" fill-opacity="0.9"/>
+          <circle cx="16" cy="16" r="2" fill="url(#logo-grad)"/>
+          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+        </svg>
+        Civic Voice
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#impact">Impact</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#cta" class="nav-cta">Get Started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span>🏆</span>
+            <span id="typingText" data-text="Smart India Hackathon • PS #25031">Smart India Hackathon • PS #25031</span>
+          </div>
+          <h1 class="hero-title">
+            From Idea to <span class="gradient-text">Impact</span>.<br>
+            Your City, Your <span class="gradient-text">Voice</span>.
+          </h1>
+          <p class="hero-desc">
+            An end-to-end, mobile-first civic engagement platform that empowers citizens to report, 
+            track, and resolve local issues — transforming governance with transparency and trust.
+          </p>
+          <div class="hero-actions">
+            <a href="#features" class="btn-primary">
+              Explore Features
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#architecture" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              View Architecture
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3><span class="counter" data-target="100" data-suffix="%">0</span></h3>
+              <p>Mobile-First</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="counter" data-target="10" data-suffix="x">0</span></h3>
+              <p>Faster Routing</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="counter" data-target="24" data-suffix="/7">0</span></h3>
+              <p>Real-Time Updates</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/hero-illustration.png" alt="Civic Voice Smart City Illustration" loading="eager">
+          </div>
+          <div class="hero-float-card card-1">
+            <div class="card-icon" style="background: rgba(16,185,129,0.15); border-radius: 10px;">✅</div>
+            <div class="card-label">Issues Resolved</div>
+            <div class="card-value gradient-text">2,847+</div>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="card-icon" style="background: rgba(6,182,212,0.15); border-radius: 10px;">📍</div>
+            <div class="card-label">Live Geo-Tracking</div>
+            <div class="card-value gradient-text">Active</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="features-header reveal">
+        <div class="section-label">Core Features</div>
+        <h2 class="section-title">Everything Citizens &<br><span class="gradient-text">Governments</span> Need</h2>
+        <p class="section-desc">A feature-rich experience for both citizens and municipal staff — designed for impact, built for scale.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔐</div>
+          <h3>Secure OTP Onboarding</h3>
+          <p>Frictionless authentication with OTP verification and instant location detection — no passwords to remember.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Live Issue Dashboard</h3>
+          <p>Intuitive tracking interface with real-time status updates, filter by category, and instant push notifications.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📸</div>
+          <h3>Smart Reporting</h3>
+          <p>Photo upload, category selection, and auto geo-tagging ensures no civic issue is ever missed or lost.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🗺️</div>
+          <h3>Live City Issue Map</h3>
+          <p>Interactive map showing all civic issues across the city — transparency and trust at a glance.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔔</div>
+          <h3>Automated Notifications</h3>
+          <p>Citizens and officials receive instant alerts on status changes, escalations, and resolution confirmations.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📈</div>
+          <h3>Real-Time Analytics</h3>
+          <p>Government teams get actionable insights — issue trends, resolution times, department performance metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">From Report to Resolution</div>
+        <h2 class="section-title">How <span class="gradient-text">Civic Voice</span> Works</h2>
+        <p class="section-desc">A seamless pipeline that routes every civic complaint to the right department within seconds.</p>
+      </div>
+      <div class="steps-container">
+        <div class="step reveal">
+          <div class="step-number-col">
+            <div class="step-number">1</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>📱 Citizen Reports an Issue</h3>
+            <p>Open the app, snap a photo, select a category, and the system auto-detects your GPS location. Submit in under 30 seconds.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-number-col">
+            <div class="step-number">2</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>⚡ Smart Routing Engine</h3>
+            <p>Our backend instantly classifies the issue and routes it to the correct municipal department — water, roads, electricity, sanitation, or public safety.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-number-col">
+            <div class="step-number">3</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>🔧 Department Takes Action</h3>
+            <p>Municipal staff receive the complaint with all details, photos, and precise location. They update the status in real-time as work progresses.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-number-col">
+            <div class="step-number">4</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <h3>✅ Resolution & Feedback</h3>
+            <p>Citizens get notified when resolved, can verify the fix, and rate the response. Full transparency from report to resolution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section class="tech-stack section" id="tech-stack">
+    <div class="container">
+      <div class="features-header reveal">
+        <div class="section-label">Technology</div>
+        <h2 class="section-title">Built with <span class="gradient-text">Modern</span> Tech</h2>
+        <p class="section-desc">A robust, scalable architecture designed for production-grade civic engagement.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card reveal">
+          <div class="tech-logo">⚛️</div>
+          <h4>React Native</h4>
+          <p>Cross-platform Mobile</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">🍃</div>
+          <h4>Spring Boot</h4>
+          <p>Backend API</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">🐘</div>
+          <h4>PostgreSQL</h4>
+          <p>Relational Database</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">📍</div>
+          <h4>Maps API</h4>
+          <p>Geo-Location & Mapping</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">🔔</div>
+          <h4>Firebase FCM</h4>
+          <p>Push Notifications</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">☁️</div>
+          <h4>Cloud Storage</h4>
+          <p>Media Handling</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">🔐</div>
+          <h4>JWT + OTP</h4>
+          <p>Authentication</p>
+        </div>
+        <div class="tech-card reveal">
+          <div class="tech-logo">📊</div>
+          <h4>Analytics Engine</h4>
+          <p>Real-Time Insights</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPACT ===== -->
+  <section class="impact section" id="impact">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Impact & Innovation</div>
+        <h2 class="section-title">Why <span class="gradient-text">Civic Voice</span> Matters</h2>
+        <p class="section-desc">Designed to bridge the gap between citizens and local governance with measurable impact.</p>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card reveal">
+          <div class="impact-num">01</div>
+          <div>
+            <h3>Real-Time Analytics for Government</h3>
+            <p>Actionable dashboards showing issue trends, department workload, resolution rates, and citizen satisfaction — empowering data-driven governance.</p>
+          </div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-num">02</div>
+          <div>
+            <h3>Lightning-Fast Media Handling</h3>
+            <p>Optimized image compression and cloud storage pipeline ensures photos upload instantly, even on low-bandwidth networks across rural areas.</p>
+          </div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-num">03</div>
+          <div>
+            <h3>Scalable Architecture</h3>
+            <p>Engineered for concurrent users and high-volume multimedia content. Load-tested to handle city-wide deployment without performance degradation.</p>
+          </div>
+        </div>
+        <div class="impact-card reveal">
+          <div class="impact-num">04</div>
+          <div>
+            <h3>Future-Ready API Integrations</h3>
+            <p>Modular design with RESTful APIs ready for smart city expansion — IoT sensors, AI-powered categorization, and multi-language support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARCHITECTURE ===== -->
+  <section class="architecture section" id="architecture">
+    <div class="container">
+      <div class="features-header reveal">
+        <div class="section-label">System Design</div>
+        <h2 class="section-title">End-to-End <span class="gradient-text">Architecture</span></h2>
+        <p class="section-desc">A clean, production-grade pipeline from citizen reports to government dashboards.</p>
+      </div>
+      <div class="arch-visual reveal">
+        <div class="arch-flow">
+          <div class="arch-node client">
+            <div class="node-icon">📱</div>
+            <h4>React Native App</h4>
+            <p>Citizen & Staff</p>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node api">
+            <div class="node-icon">🔗</div>
+            <h4>REST API Gateway</h4>
+            <p>JWT Secured</p>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node server">
+            <div class="node-icon">⚙️</div>
+            <h4>Spring Boot</h4>
+            <p>Business Logic</p>
+          </div>
+          <div class="arch-arrow">→</div>
+          <div class="arch-node db">
+            <div class="node-icon">🗄️</div>
+            <h4>PostgreSQL</h4>
+            <p>Data Store</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Ready to Transform <span class="gradient-text">Your City</span>?</h2>
+        <p>Civic Voice is built to scale — from a hackathon prototype to a city-wide deployment. Let's make governance transparent, responsive, and citizen-first.</p>
+        <a href="https://github.com" class="btn-primary" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="url(#flogo)"/>
+          <path d="M16 10l-4 3v5l4 2 4-2v-5l-4-3z" fill="#fff" fill-opacity="0.9"/>
+          <defs><linearGradient id="flogo" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+        </svg>
+        Civic Voice
+      </div>
+      <p>Built with ❤️ for Smart India Hackathon 2025 • Problem Statement #25031</p>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#tech-stack">Tech</a>
+        <a href="#impact">Impact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
